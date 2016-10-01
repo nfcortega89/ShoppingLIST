@@ -76,3 +76,6 @@ app.put('/items/:id', jsonParser, function(request, response) {
     response.status(201).json(edited);
 })
 app.listen(process.env.PORT || 8080);
+
+exports.app = app;
+exports.storage = storage;
